@@ -1,0 +1,23 @@
+<p>Call coming from : ${phoneNum}</p>
+<p>Patient calling : ${patientName}</p>
+<p>Patient location : ${patientLocation}</p>
+<p>Patient Disease : ${patientDisease}</p>
+<p>Patient Vitals : ${patientVitals}</p>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Schedule Appointment </title>
+</head>
+ <body>
+   <form name="EmamiDemo" method="get">
+
+       <h2>Choose the mode of appointment</h2>
+       <input type="button" value="Face to face" name="faceToFace" onclick="window.location.href='http://54.255.204.71:8080/EmamiDemo/EmamiDemo?faceToFace=123&phoneNumber=' + ${phoneNum};"/>
+       <input type="button" value="Video Consultation" name="video" onclick="window.location.href='http://54.255.204.71:8080/EmamiDemo/EmamiDemo?video=123&phoneNumber=${phoneNum}'"/>
+
+    </form>
+
+</body>
+</html>
+
